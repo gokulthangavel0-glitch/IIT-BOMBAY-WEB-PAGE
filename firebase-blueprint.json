@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "registrations": {
+      "title": "Registration",
+      "description": "Techfest IIT Bombay participant registration records",
+      "type": "object",
+      "properties": {
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "college": { "type": "string" },
+        "phone": { "type": "string" },
+        "passType": { "type": "string" },
+        "events": { "type": "array", "items": { "type": "string" } },
+        "paymentStatus": { "type": "string" },
+        "transactionId": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "userId": { "type": "string" },
+        "language": { "type": "string" }
+      },
+      "required": ["fullName", "email", "passType", "createdAt"]
+    },
+    "chatMessages": {
+      "title": "ChatMessage",
+      "description": "Networking chat messages",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "senderId": { "type": "string" },
+        "senderName": { "type": "string" },
+        "senderAvatar": { "type": "string" },
+        "channel": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "userRole": { "type": "string" }
+      },
+      "required": ["text", "senderId", "senderName", "timestamp"]
+    },
+    "notifications": {
+      "title": "Notification",
+      "description": "Real-time schedule updates and announcement broadcasts",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "message": { "type": "string" },
+        "category": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "urgent": { "type": "boolean" }
+      },
+      "required": ["title", "message", "timestamp"]
+    },
+    "analytics": {
+      "title": "AnalyticsSummary",
+      "description": "Event statistics and engagement tracking",
+      "type": "object",
+      "properties": {
+        "totalRegistrations": { "type": "number" },
+        "totalRevenue": { "type": "number" },
+        "activeUsers": { "type": "number" },
+        "lastUpdated": { "type": "string" }
+      }
+    }
+  }
+}

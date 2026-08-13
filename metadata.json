@@ -1,0 +1,6 @@
+{
+  "name": "Techfest IIT Bombay: Cyborg Edition",
+  "description": "Official Cyborg-themed landing page and portal for Techfest IIT Bombay featuring interactive 3D elements, automated registration, real-time analytics dashboard, payment simulation, live networking chat, schedule notifications, speaker spotlights, multi-language support, and futuristic dark mode UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
